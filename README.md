@@ -10,10 +10,10 @@ Primeiro para que possamos ter uma **página web** ou uma **aplicação mobile**
 
 ```typescript
 <body>
-  .
-  .
-  .
-  <script></script>
+.
+.
+.
+<script></script>
 </body>
 ```
 ###Exibindo resultados
@@ -22,7 +22,7 @@ Para que posssamos ver através do nosso navegador os *logs*, nosso resultados d
 
 ```typescript
 <script>
-  console.log('Hello World');
+console.log('Hello World');
 <script/>
 ```
 Esse *script* é um usado de forma global, ou seja, é um comando universal utilizado na linguagem **JavaScript**.
