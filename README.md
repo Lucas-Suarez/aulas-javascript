@@ -8,7 +8,7 @@
 
 Primeiro para que possamos ter uma **página web** ou uma **aplicação mobile** com uma estrutura de código mais dinâmica, é interessate usarmos as tags <script></script> no final da tag <body></body>, antes do fechamento da tal, como é representado abaixo.
 
-```typescript
+```html
 <html>
   <head>
   .
@@ -24,14 +24,13 @@ Primeiro para que possamos ter uma **página web** ou uma **aplicação mobile**
   </body>
 </html>
 ```
+
 ### Exibindo resultados
 
 Para que posssamos ver através do nosso navegador os *logs*, nosso resultados da aplicação, que está sendo executado e quando está sendo executado usamos o *script* abaixo.
 
-```typescript
-<script>
+```javascript
 console.log('Hello World');
-<script/>
 ```
 Esse *script* é um usado de forma global, ou seja, é uma linha de código universal utilizado na linguagem **JavaScript**.
 
