@@ -8,18 +8,18 @@ Primeiro para que possamos ter uma **página web** ou uma **aplicação mobile**
 
 ```Html
 <html>
-  <head>
-  .
-  .
-  .
-  </head>
+<head>
+.
+.
+.
+</head>
 
-  <body>
-  .
-  .
-  .
-  <script>/*código javascript*/</script>
-  </body>
+<body>
+.
+.
+.
+<script>/*código javascript*/</script>
+</body>
 </html>
 ```
 ## Exibindo resultados
@@ -41,23 +41,23 @@ para que possamos declarar uma **variável** é preciso escrevermos o sguinte c�
 
 ```html
 <html>
-  <head>
-  .
-  .
-  .
-  </head>
+<head>
+.
+.
+.
+</head>
 
-  <body>
-    .
-    .
-    .
-    <script>
+<body>
+.
+.
+.
+<script>
 
-      //código javaScript
-      var nome = "Lucas";
+//código javaScript
+var nome = "Lucas";
 
-    </script> 
-  </body>
+</script> 
+</body>
 </html>
 ```
 ### Tipos de variáveis
@@ -103,10 +103,10 @@ Os objetos são itens que possuem *atribtos* e *ações* que no **javascript** s
 
 ```javascript
 var aluno = {
-  nome: 'Lucas',
-  idade: 19,
-  peso: 60.5,
-  humano: true
+nome: 'Lucas',
+idade: 19,
+peso: 60.5,
+humano: true
 };
 ```
 
