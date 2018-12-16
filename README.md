@@ -74,17 +74,20 @@ var nome = "Lucas";
 ```
 **Números inteiros (int)**
 
+Tipos de variáveis que armazenam apenas números inteiros;
 ```javascript
 var idade = 19;
 ```
 **Números decimais (float)**
 
+Tipos de variáveis que armazenam números inteiros e decimais;
 ```javascript
 var peso = 60.5;
 ```
 
 **Verdadeiro ou falso (boolean)**
 
+Tipos de variáveis que armazenam resultados verdadeiros ou falsos;
 ```javascript
 var humano = true;
 ```
