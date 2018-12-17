@@ -66,33 +66,33 @@ Na liguagem *javascript* temos muitos tipos de váriaveis, abaixo pode-se observ
 
 **Obs.: Os tipos abaixo são apenas para fins ilustrativos, não é necessário declararmos nas variáveis pelo fato delas serem dinâmicas.**
 
-**Strings (textos)**
+#### Strings (textos)
 
 Tipos de variáveis que armazenam apenas textos;
 ```javascript
 var nome = "Lucas";
 ```
-**Números inteiros (int)**
+#### Números inteiros (int)
 
 Tipos de variáveis que armazenam apenas números inteiros;
 ```javascript
 var idade = 19;
 ```
-**Números decimais (float)**
+#### Números decimais (float)
 
 Tipos de variáveis que armazenam números inteiros e decimais;
 ```javascript
 var peso = 60.5;
 ```
 
-**Verdadeiro ou falso (boolean)**
+#### Verdadeiro ou falso (boolean)
 
 Tipos de variáveis que armazenam resultados verdadeiros ou falsos;
 ```javascript
 var humano = true;
 ```
 
-**Vetores**
+#### Vetores
 
 Os vetores são nada mais que *arrays*, que na linguagem *javascript* são ecritas em forma de variáveis.
 
@@ -100,7 +100,7 @@ Os vetores são nada mais que *arrays*, que na linguagem *javascript* são ecrit
 var alunos = ['Lucas', 'Carol', 'Ana', 'Samuel'];
 ```
 
-**Objetos**
+#### Objetos
 
 Os objetos são itens que possuem *atribtos* e *ações* que no **javascript** são dlecrados como variáveis.
 
@@ -117,12 +117,12 @@ humano: true
 
 Para que possamos exibir todos essas informações no console, devemos seguir algumas regras de exibição.
 
-**Exibindo váriaves**
+#### Exibindo váriaves
 
 ```javascript 
 console.log(nome, idade, peso, humano);
 ```
-**Exibindo Vetor**
+#### Exibindo Vetor
 
 *Com esse código será exibido todos itens existentes no array*
 
@@ -130,7 +130,7 @@ console.log(nome, idade, peso, humano);
 console.log(alunos);
 ```
 
-**Exibindo Vetor (item específico)**
+#### Exibindo Vetor (item específico)
 
 *Com esse código será exibido apenas o item corresnpondente*
 
@@ -138,14 +138,14 @@ console.log(alunos);
 console.log(alunos[1]);
 ```
 
-**Exibindo Objeto**
+#### Exibindo Objeto
 
 *Com esse código será exibido todos os atributos do objeto*
 
 ```javascript 
 console.log(aluno);
 ```
-**Exibindo Objeto Específico**
+#### Exibindo Objeto Específico
 
 *Com esse código será exibido apenas o atributo especificado*
 
