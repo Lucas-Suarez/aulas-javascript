@@ -172,7 +172,7 @@ var resultado = (exemplo de cálculo);
 
 **Obs.: As duas formas de declararmos um variável está correta porém, a  primeira é a mais recomendada pois, economiza linhas de código, logo trazendo uma experiência mais rápida para o usuário.**
 
-### Criando cáculos
+### Criando cálculos
 
 #### Soma
 
@@ -249,7 +249,7 @@ resultado -> 2
 O módulo é usado para descobrir o resto de uma divisão, para que possamos fazer esse cálculo usamos o sinal de `%`, como está exemplificado.
 
 ```javascript
-//cálcuolo e exibição
+//cálculo e exibição
 var x = 11, y = 5;
 var resultado = x % y;
 
@@ -261,7 +261,7 @@ resultado -> 1
 Caso queiramos incrementar os valores nas nossas variáveis podemos fazer da seguinte maneira.
 
 ```javascript
-//cáculo e exibição
+//cálculo e exibição
 var x = 10, y =5;
 var resultado = x + y;
 
@@ -278,7 +278,7 @@ x -> 13
 ```
 **OU**
 ```javascript
-//cáculo e exibição
+//cálculo e exibição
 var x = 10, y =5;
 var resultado = x + y;
 
