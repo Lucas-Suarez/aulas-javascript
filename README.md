@@ -119,14 +119,14 @@ Para que possamos exibir todos essas informações no console, devemos seguir al
 
 **Exibindo váriaves**
 
-```typescript 
+```javascript 
 console.log(nome, idade, peso, humano);
 ```
 **Exibindo Vetor**
 
 *Com esse código será exibido todos itens existentes no array*
 
-```typescript 
+```javascript 
 console.log(alunos);
 ```
 
@@ -134,7 +134,7 @@ console.log(alunos);
 
 *Com esse código será exibido apenas o item corresnpondente*
 
-```typescript 
+```javascript 
 console.log(alunos[1]);
 ```
 
@@ -142,13 +142,155 @@ console.log(alunos[1]);
 
 *Com esse código será exibido todos os atributos do objeto*
 
-```typescript 
+```javascript 
 console.log(aluno);
 ```
 **Exibindo Objeto Específico**
 
 *Com esse código será exibido apenas o atributo especificado*
 
-```typescript
+```javascript
 console.log(aluno.nome);
 ```
+## Operações matemáticas
+
+### Criando variáveis
+
+As opreções matemáticas são usadas para fazer cálculos entre valores que são armazenados em variáveis.
+
+para que possamos executar essas operações precisamos criar algumas variáveis, nesse caso serão usadas apenas duas.
+
+```javascript
+var x = 10, y = 5;
+var resultado = (exemplo de cálculo);
+```
+```javascript
+var x = 10;
+var y = 5;
+var resultado = (exemplo de cálculo);
+```
+
+**Obs.: As duas formas de declararmos um variável está correta porém, a  primeira é a mais recomendada pois, economiza linhas de código, logo trazendo uma experiência mais rápida para o usuário.**
+
+### Criando cáculos
+
+#### Soma
+
+Para executarmos os calculos de adição é bem simples, basta usar o `+`, como é exemplificado.
+
+```javascript
+//cálculo e exibição
+var x = 10, y = 5;
+var resultado = x + y;
+
+console.log(resultado);
+
+//console
+resultado -> 15;
+```
+Caso trocarmos os valores da váriavel `x`, que nesse caso é inteiro por um as variáveis serão concatenadas, ou seja, ao invés somar `x + y` irá uni-las.
+
+```javascript
+//cálculo e exibição
+var x = 10, y = "5";
+var resultado = x + y;
+
+console.log(resultado);
+
+//Console
+resultado -> 105;
+```
+
+Observe que o variável `y` é uma *String* pois, está entre áspas.
+
+#### Subtração
+
+Para executarmos os calculos de subtração é bem simples, basta usar o `-`, como é exemplificado.
+
+```javascript
+var x = 10, y = 5;
+var resultado = x - y;
+
+console.log(resultado);
+
+//console
+resultado -> 5
+```
+#### Multiplicação
+
+Para executarmos os calculos de multiplicação é bem simples, basta usar o `*`, como é exemplificado.
+
+```javascript
+var x = 10, y = 5;
+var resultado = x * y;
+
+console.log(resultado);
+
+//console
+resultado -> 50
+```
+
+#### Divisão
+
+Para executarmos os calculos de divisão é bem simples, basta usar a `/`, como é exemplificado.
+
+```javascript
+var x = 10, y = 5;
+var resultado = x / y;
+
+console.log(resultado);
+
+//console
+resultado -> 2
+```
+
+#### Módulo
+
+O módulo é usado para descobrir o resto de uma divisão, para que possamos fazer esse cálculo usamos o sinal de `%`, como está exemplificado.
+
+```javascript
+//cálcuolo e exibição
+var x = 11, y = 5;
+var resultado = x % y;
+
+console.log(resultado);
+
+//console
+resultado -> 1
+```
+Caso queiramos incrementar os valores nas nossas variáveis podemos fazer da seguinte maneira.
+
+```javascript
+//cáculo e exibição
+var x = 10, y =5;
+var resultado = x + y;
+
+console.log(resultado);
+
+//incremento
+x = x + 3;
+
+console.log(x);
+
+//console
+resultado -> 15
+x -> 13
+```
+**OU**
+```javascript
+//cáculo e exibição
+var x = 10, y =5;
+var resultado = x + y;
+
+console.log(resultado);
+
+//incremento
+x += 3;
+
+console.log(x);
+
+//console
+resultado -> 15
+x -> 13
+```
+**Obs.: Podemos ver que temos duas formas de incrementar as nossas variáveis porém, a mais prática é a segunda. É possível adicionarmos qualquer sinal das operações matemáticas (+), (-), (/), (*) e  qualquer outra váriavel**
