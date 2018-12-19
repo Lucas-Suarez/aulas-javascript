@@ -18,7 +18,7 @@ Primeiro para que possamos ter uma **página web** ou uma **aplicação mobile**
 .
 .
 .
-<script>/*código javascript*/</script>
+  <script type="text/javascript" src="index.js"></script>
 </body>
 </html>
 ```
@@ -39,26 +39,9 @@ Na linguagem *javascript* quando o assunto é variáveis, não é preciso setar 
 
 para que possamos declarar uma **variável** é preciso escrevermos o sguinte código:
 
-```html
-<html>
-<head>
-.
-.
-.
-</head>
-
-<body>
-.
-.
-.
-<script>
-
+```javascript
 //código javaScript
 var nome = "Lucas";
-
-</script> 
-</body>
-</html>
 ```
 ### Tipos de variáveis
 
@@ -294,3 +277,61 @@ resultado -> 15
 x -> 13
 ```
 **Obs.: Podemos ver que temos duas formas de incrementar as nossas variáveis porém, a mais prática é a segunda. É possível adicionarmos qualquer sinal das operações matemáticas (+), (-), (/), (*) e  qualquer outra váriavel**
+
+## Funções
+
+*Funções* são blocos de código usados para executar uma tarefa, ou calcular um valor.
+Para criar uma função é relativamente simples, nesse exemplo usaremos uma função de cálculo de adição.
+
+```javascript
+//Função
+function soma(numero1, numero2) {
+  var resultado = numero1 + numero2
+
+//Retorno
+  return resultado
+}
+
+//Execução
+var resultado = soma(1, 2)
+
+//Exibição
+console.log(resultado);
+```
+É importante entendermos que quando trata-se de **variáveis**, podemos adicionar a mesma variável em diversos lugares do código pois, é considerado no código apenas dentro do seu próprio escopo, como é mostrado no exemplo a cima.
+
+## Estruturas condicionais
+
+Estruturas condicionais *Javascript*, são como estruturas condicionais na maioria das linguagens de programação existentes, as utilizamos para verificar uma condição e definir se algo deve ou não acontecer, para que possamos por isso em prática é relativamente simples, observe:
+
+```javascript
+function retornarsexo(sexo) {
+
+  if (sexo == 'M') {
+
+    return 'Masculino';
+  }else if {
+    return 'Feminino';
+  }else {
+    return 'Outro';
+  }
+}
+
+var resultado = retornarsexo ("M") //Como o resultado é 'M' o "if" executou sua função e retornou "Masculino", se o resultado fosse 'F' cairia no else if e retornaria "Feminino" e se fosse qualquer outro sexo cairia no "else" que retornaria "outro".
+
+console.log(resultado);
+```
+### Condição se if
+
+Podemos observar que para que a condição `if` funcione temos que usar o termo `==` mas, o que esse?! Basicamente o `==` server para comparar, nesse caso, se *sexo* é igual a *M*. 
+Temos também o termo `===` que da mesma forma do primeiro serve para comparar, mas com esse termo a comparação se torna mais rígida, ele compara, nesse caso, se *sexo* é *M* e também compara se são do mesmo tipo. 
+
+### Condição se senão else if
+
+Tem a mesma função do `if` e diferente do `else` pois, ele não apenas executa a ordem quando a função anterior não funciona, mas também ele executa uma função antes de executar a ordem, como é visto no exemplo.
+
+### Condicinal else
+
+
+Usamos o `else` para dizer que se caso o `if` for negativo, então ele executará outra função, como é visto no exemplo a cima.
+
