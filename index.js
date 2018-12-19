@@ -1,5 +1,7 @@
 //javascript
 
+// VARAIÁVEIS, OBJETO E ARRAY
+
       //String, int, float, boolean
       var nome = "Lucas";
       var idade = 19;
@@ -31,6 +33,8 @@
 
       // exibindo no console (objeto específico)
       console.log(aluno.humano);
+
+// OPERAÇÕES MATAMÁTICAS
 
       //SOMA
       var x = 10, y = 5, resultado;
@@ -76,3 +80,31 @@
 
       //EXIBIÇÃO
       console.log(resultado + " -> valor do módulo numérico");
+
+// FUNÇÃO
+
+      //Função
+      function soma(numero1, numero2) {
+        var resultado = numero1 + numero2;
+
+        return resultado
+      }
+
+      var resultado = soma(1, 2);
+      console.log(resultado);
+
+// CONDICIONAIS
+
+      //função condicional
+      function retornasexo(sexo) {
+        
+        if (sexo === 'M') {
+
+          return 'Masculino'
+        }else {
+          
+          return 'Feminino';
+        }
+      }
+      var resultado = retornasexo ('M')
+      console.log(resultado);
