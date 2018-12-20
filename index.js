@@ -95,9 +95,8 @@
 
 // CONDICIONAIS
 
-      //função condicional
+      //Função if, if else, else
       function retornasexo(sexo) {
-        
         if (sexo === 'M') {
 
           return 'Masculino'
@@ -107,4 +106,18 @@
         }
       }
       var resultado = retornasexo ('M')
-      console.log(resultado);
+      console.log(resultado + ' -> Função if');
+
+      //Função switch case
+      function exibirsexo(sexo) {
+        switch (sexo) {
+          case 'M':
+            return 'Feminino';
+          case 'F':
+            return 'Feminino';
+          default:
+            return 'Outro';
+        }
+      }
+      var resultado = exibirsexo ('F');
+      console.log(resultado + ' -> Função Switch case')
