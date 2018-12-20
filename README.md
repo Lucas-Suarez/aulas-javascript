@@ -305,6 +305,7 @@ console.log(resultado);
 Estruturas condicionais *Javascript*, são como estruturas condicionais na maioria das linguagens de programação existentes, as utilizamos para verificar uma condição e definir se algo deve ou não acontecer, para que possamos por isso em prática é relativamente simples, observe:
 
 ```javascript
+//Função
 function retornarsexo(sexo) {
 
   if (sexo == 'M') {
@@ -317,21 +318,42 @@ function retornarsexo(sexo) {
   }
 }
 
-var resultado = retornarsexo ("M") //Como o resultado é 'M' o "if" executou sua função e retornou "Masculino", se o resultado fosse 'F' cairia no else if e retornaria "Feminino" e se fosse qualquer outro sexo cairia no "else" que retornaria "outro".
+//Resultado da função
+var resultado = retornarsexo ("M")
 
+//Exibição
 console.log(resultado);
 ```
-### Condição se if
+**Obs.: Como o resultado é 'M' o "if" executou  sua função e retornou "Masculino", se o resultado fosse 'F' cairia no else if e retornaria "Feminino" e se fosse qualquer outro sexo cairia no "else" que retornaria "outro".**
+
+### Condição if
 
 Podemos observar que para que a condição `if` funcione temos que usar o termo `==` mas, o que esse?! Basicamente o `==` server para comparar, nesse caso, se *sexo* é igual a *M*. 
 Temos também o termo `===` que da mesma forma do primeiro serve para comparar, mas com esse termo a comparação se torna mais rígida, ele compara, nesse caso, se *sexo* é *M* e também compara se são do mesmo tipo. 
 
-### Condição se senão else if
+### Condição else if
 
 Tem a mesma função do `if` e diferente do `else` pois, ele não apenas executa a ordem quando a função anterior não funciona, mas também ele executa uma função antes de executar a ordem, como é visto no exemplo.
 
-### Condicinal else
+### Condição else
 
+Usamos o `else` para dizer que se caso o `if` for falso, então ele executará outra ação, como é visto no exemplo a cima.
 
-Usamos o `else` para dizer que se caso o `if` for negativo, então ele executará outra função, como é visto no exemplo a cima.
+## Switch case
+
+Quando temos um caso de trabalho em massa em cima de uma única variável é interessante usarmos a condicional `switch case`, pois com ela você pode executar varias funções e ações com mais praticidade, como segue o exemplo.
+
+```javascript
+//Função
+function retornarsexo(sexo) {
+  switch (sexo) {
+    case 'M':
+      return 'Masculino';
+    case 'F':
+      return 'Feminino';
+    default:
+      return 'outro';
+  }
+}
+```
 
