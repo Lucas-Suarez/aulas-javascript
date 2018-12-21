@@ -444,4 +444,4 @@ var resultado = sexo === 'M';
 console.log(masculino);
 ```
 
-**Obs.: Esse método funciona apenas para testes com um elemento**
+**Obs.: Esse método funciona apenas para testes com um elemento.**
