@@ -356,4 +356,92 @@ function retornarsexo(sexo) {
   }
 }
 ```
+## Operadores Lógicos
 
+Os operadores lógicos são normalmente usados com valores booleanos (lógicos), Quando estão, eles retornam um valor booleano, como é mostrado no exemplo.
+
+Existem três tipos de operadores lógicos.
+
+### Operador && 
+
+Esse operador (e/and), faz a comparação de dois elementos no bloco de código, tem a função de fazer duas comarações no mesmo `if` ou qualquer outro condicional. Como mostra o exemplo abaixo.
+
+```javascript
+//função
+var sexo = 'M', idade = 19;
+
+if (sexo === 'M' && idade >= 18) {
+  console.log('Sexo Masculino e maior de idade');
+}
+
+//console
+Sexo Masculino e maior de idade
+```
+No exemplo podemos observar que a ação só será verdadeira se as duas partes forem verdadeiras, caso contrário não retornar o `if`.
+
+### Operador ||
+
+Com esse operador (ou/or) podemos comparar dois itens e ver se um dos dois é verdadeiro caso seja ele retornará a função, caso contrário ele não entrará no bloco, como é ilustrado no exemplo.
+
+```javascript
+//função
+var sexo = 'M', idade = 19;
+
+if (sexo === 'M' || idade >= 18) {
+  console.log("Ok");
+}
+
+//console
+Ok
+```
+
+### Operador !==
+
+Esse operador (não/desigualdade ou not) é utilizado para verificar a desigualdade dos elementos, caso ele seja diferente do que é setado retornar *ok*, como é visto no exemplo.
+
+```javascript
+//função
+var sexo = 'M';
+
+if (sexo !== 'F') {
+  console.log(Ok);
+
+//console
+Ok
+}
+```
+Existem duas formas de simplificar essa função:
+
+**1. Armazenando valor em variáveis**
+
+Com esse método os valores que são retornado em console a partir das função serão exibidos de formas iguais, porém em um código mais leve. Observe o exemplo.
+
+```javascript
+//função
+var sexo = 'F';
+var resultado;
+
+if (sexo !== 'M') {
+  resultado = true;
+}else {
+  resultado = false;
+}
+
+//exibição
+console.log(resultado);
+```
+
+**2. Armazenando a função em variável**
+
+Com esse método a função que será executada terá o mesmo efeito, porém em um código mais leve. Observe o exemplo.
+
+```javascript
+//função
+var sexo = 'F';
+
+var resultado = sexo === 'M';
+
+console.log(masculino);
+```
+
+**Obs.: Esse método funciona apenas para testes com um elemento**

@@ -121,3 +121,35 @@
       }
       var resultado = exibirsexo ('F');
       console.log(resultado + ' -> Função Switch case')
+
+      //OPERADORES LÓGICOS
+
+      //Operador &&
+      var sexo = 'M', idade = 19;
+
+      if (sexo === 'M' && idade >= 18) {
+        console.log('É do sexo masculino e maior de idade');
+      }
+
+      //Operador ||
+      var sexo = 'M', idade = 19;
+
+      if (sexo === 'M' || idade >= 18) {
+        console.log("Ok")
+      }
+
+      //Operador !== ou !=
+
+      var sexo = 'M', idade = 19;
+
+      if (sexo !== 'F') {
+        console.log("Ok!")
+      }
+
+      //Simplificando a função
+      var sexo = 'M';
+
+      var masculino = sexo === 'M';
+
+      console.log(masculino);
+        
