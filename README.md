@@ -443,5 +443,35 @@ var resultado = sexo === 'M';
 
 console.log(masculino);
 ```
+## Condição ternária
 
-**Obs.: Esse método funciona apenas para testes com um elemento.**
+O operador condicional *ternário* é o único operador `JavaScript` que possui três operandos. Este operador é frequentemente usado como um atalho para a instrução `if`, ou seja, o condicional serve para simplifar a função como é apresentado no exemplo.
+
+```javascript
+// função comum
+var sexo = 'M';
+
+if (sexo === 'M') {
+return 'Masculino';
+} else {
+return 'Feminino';
+}
+
+Console.log(sexo);
+
+//console
+Masculino
+```
+**Com o condicional ternário**
+
+```javascript
+var sexo = 'M';
+
+var retorno = (sexo === 'M') ? 'Masculino' : 'Feminino';
+
+console.log(retorno);
+
+//console
+Masculino
+```
+Observe que nos dois blocos de códigos a exibição final é a mesma, porém na condição ternária usa-se o sinal de interrogação `?` para representar a ação do `if` e o sinal de dois pontos `:` para representar a ação do `else`.
