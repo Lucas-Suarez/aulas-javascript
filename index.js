@@ -152,4 +152,14 @@
       var masculino = sexo === 'M';
 
       console.log(masculino);
+
+//CONDIÇÃO TERNÁRIA
+
+      //condição ternária
+      var sexo = 'M';
+
+      var retorno = (sexo === 'M') ? 'Masculino' : 'Feminino';
+
+      console.log(retorno + ' <- Condição ternária');
+
         
