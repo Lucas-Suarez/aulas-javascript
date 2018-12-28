@@ -445,7 +445,7 @@ console.log(masculino);
 ```
 ## Condição ternária
 
-O operador condicional *ternário* é o único operador `JavaScript` que possui três operandos. Este operador é frequentemente usado como um atalho para a instrução `if`, ou seja, o condicional serve para simplifar a função como é apresentado no exemplo.
+O operador condicional *ternário* é o único operador `JavaScript` que possui três operandos. Este operador é frequentemente usado como um atalho para a instrução `if`, ou seja, o condicional serve para simplifar a função simples que verifique apenas uma variante, como é apresentado no exemplo.
 
 ```javascript
 // função comum
@@ -475,3 +475,34 @@ console.log(retorno);
 Masculino
 ```
 Observe que nos dois blocos de códigos a exibição final é a mesma, porém na condição ternária usa-se o sinal de interrogação `?` para representar a ação do `if` e o sinal de dois pontos `:` para representar a ação do `else`.
+
+## Estruturas de repetição
+
+As **Estruturas de repetição** tem serventia ao programador a executar um determinado bloco de código um determinado número de vezes, de acordo com sua necessidade ao escrever o script. Temos dois `loops` mais usados na linguagem`javscript`.
+
+### for
+
+Esse `loop` é geralmente mais usado quando sabemos o tamanho do intervalo, ou seja, quando sabemos até quando é necessário repetir, abaixo vemos o código.
+
+```javascript
+//loop for
+for (var i = 0; i >= 10; i++) {
+  console.log(i);
+}
+```
+
+### while
+
+Esse tipo de `loop` é usado quando não sabemos a dimensão do intervalo, ou seja, quando precisamos usar algo a mais para descobrir, como mostra o exemplo.
+
+```javascript
+var j = 12141312 //numero aleatório
+
+while (j < 50) {
+  console.log(j);
+
+  j /= 5;
+}
+```
+
+Nesse exemplo a cima não possível sabermos quantas vezes o `j` deve ser executado até ser menor que 50, logo se aplica perfeitamente ao `loop while`.

@@ -1,4 +1,4 @@
-//javascript
+/*javascript
 
 // VARAIÁVEIS, OBJETO E ARRAY
 
@@ -160,6 +160,20 @@
 
       var retorno = (sexo === 'M') ? 'Masculino' : 'Feminino';
 
-      console.log(retorno + ' <- Condição ternária');
+      console.log(retorno + ' <- Condição ternária');*/
 
-        
+// ESTRUTURAS DE REPETIÇÃO
+
+      //loop for
+      for (var i = 0; i <= 10; i++) {
+        console.log(i + ' <- i')
+      }
+
+      //loop while 
+      var j = 102983;
+
+      while (j > 50) {
+        console.log(j + ' <- j')
+
+        j /= 5
+      }
