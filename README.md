@@ -506,3 +506,29 @@ while (j < 50) {
 ```
 
 Nesse exemplo a cima não possível sabermos quantas vezes o `j` deve ser executado até ser menor que 50, logo se aplica perfeitamente ao `loop while`.
+
+## Intervalo e timeout
+
+Esses métodos tem como servem para fazer com que uma função seja executada um número *X* de vezes ou com um delay sendo, o `intervalo` responável pela repetição da execução e `timeout` responsável pelo delay da execução, como é apresentado nos exemplos.
+
+**Função com intervalo**
+
+```javascript
+function exibialgo() {
+  console.log('Exibição do intervalo!')
+};
+
+setInterval(exibialgo, 1000);
+```
+A função deve ser passada sem o parentêses, pois sem o parênteses ele executará a função diversas vezes dentro do intervalo de tempo caso contrário, Ele é executado apenas uma vez, pois ele ja foi chamado de imediato. O valor do intervalo é passado com uma contagem de milissegundos, ou seja, o intervalo a cima será de um segundo.
+
+**Função com timeout**
+
+```javascript
+function exibialgo() {
+  console.log('Exibição do timeout!')
+};
+
+setTimeout(exibialgo, 3000);
+```
+Com esse método a função será exibida após 3 segundos.

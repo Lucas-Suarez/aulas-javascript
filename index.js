@@ -1,4 +1,4 @@
-/*javascript
+//javascript
 
 // VARAIÁVEIS, OBJETO E ARRAY
 
@@ -160,7 +160,7 @@
 
       var retorno = (sexo === 'M') ? 'Masculino' : 'Feminino';
 
-      console.log(retorno + ' <- Condição ternária');*/
+      console.log(retorno + ' <- Condição ternária');
 
 // ESTRUTURAS DE REPETIÇÃO
 
@@ -177,3 +177,19 @@
 
         j /= 5
       }
+
+//Intervalo e timeout
+
+//intervalo
+function exbialgo() {
+  console.log('Exibição do intervalo!');
+}
+
+setInterval(exbialgo, 1000);
+
+//timeout
+function exibialgo() {
+  console.log('Exibindo o timeout!');
+}
+
+setTimeout(exibialgo, 5000);
