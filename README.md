@@ -532,3 +532,132 @@ function exibialgo() {
 setTimeout(exibialgo, 3000);
 ```
 Com esse método a função será exibida após 3 segundos.
+
+## DOM
+
+A **DOM** é árvore de elementos que compõem o arquivo `.html`, ou seja, a **DOM** é responável pode manipular todos os eventos relacionados ao objetos `html` da aplicação, como por exemplo se o usuário clicou em algum botão, se ele passou o mouse por cima de uma imagem com houver e dentre muitas outras funções.
+
+Para que possamos entender melhor como funciona a manipulação de *eventos inline* vamos exemplificar. Digamos que temos um botão e queremos alertar quando o usuário clicar no botão, para isso criamos o botão no nosso `index.html`, como mostra o exemplo.
+
+```html
+<html lang="pt-br">
+  <head>
+    <title>Curso JavaScript</title>
+    <meta charset="utf-8">
+  </head>
+
+  <body>
+    
+    <div id="app">
+      <button>Click me</button>
+    </div>
+
+    <script type="text/javascript" src="index.js"></script> 
+  </body>
+</html>
+```
+Após a criação do botão precisamos criar um script para que alerte o evento acontecido.
+
+```javascript
+function exibeAlerta() {
+  alert ("Botão foi clicado!");
+} 
+```
+com essa função é passado para a aplicação que toda vez que o botão for clicado exibirá essa mensagem, em uma caixa de diálogo da página, porém somente essa função não é o suficiente para que a aplicação funcione, então vamos para seunda parte. Logo após a criação da função devemos adicionar uma ação no nosso botão, como é visto no exmplo.
+
+```html
+html lang="pt-br">
+  <head>
+    <title>Curso JavaScript</title>
+    <meta charset="utf-8">
+  </head>
+
+  <body>
+    
+    <div id="app">
+      <button onclick="exibeAlerta()">Click me</button>
+    </div>
+
+    <script type="text/javascript" src="index.js"></script> 
+  </body>
+</html>
+```
+Com essa ação do `onclick` é dito para a palicação que quando tiver um cick no botão a função será executada, e assim  a caixa de diálogo será exibida.
+
+
+## Trabalhando com a DOM
+
+O que vai ser testa do agora é como referenciar elementos da **DOM**, ou seja, do arquvo `html` com os códigos `javascript` para isso vamos criar uma estrutura no nosso código html.
+
+```html
+html lang="pt-br">
+  <head>
+    <title>Curso JavaScript</title>
+    <meta charset="utf-8">
+  </head>
+
+  <body>
+    
+    <div id="app">
+      <input type="text" name="nome" id="textbox" class="nome" />
+      <button class="botao">Adicionar</button>
+    </div>
+
+    <script type="text/javascript" src="index.js"></script> 
+  </body>
+</html>
+```
+Com esse esses elementos criados já podemos prosseguir com para a criação do código `javascript`, para que possamos ter o funcionamento desses elementos énecessário o seguinte código.
+
+```javascript
+var inputElement = document.getgetElementById('textbox');
+var inputElement = document.getgetElementByTagName('input');
+var inputElement = document.getElementByClassName('nome')
+```
+Com uma dessas variáveis setada podemos acessar o nosso `input` sendo que, `getgetElementById` serve para acessar o input ou qualquer outro elemento da **DOM** pelo ID e com isso ele só acessa um pois, o ID é único no `HTML`, o `getgetElementByTagName` ele acessa pela tag usada, que nesse caso é o input, logo acessa todos os inputs presentes na DOM por isso caso pormos um `console.log(inputElement)` teremos o retorno de um array, pois caso exista mais de um input será retornado todos existentes e por fim podemos acessar o mesmo objeto através da classe usando o `getElementByClassName` que da mesma forma que o `getgetElementById` terá o retorno em array.
+
+Temos também uma forma mais simples de encontrar referenciar e encontrar nossos objetos usando o `querySelector`, com isso podemos andar pela nossa DOM, digamos assim, basta dizer onde está ou especificar o objeto, como é paresentado no exemplo.
+
+```javascript
+var inputElement = document.querySelector('div#app input');
+// OU //
+var inputElement = document.querySelector('input[name=nome]');
+
+//exibindo.no.console
+console.log(inputElement);
+```
+**Obs.: O `console.log` serve apenas para visualizarmos se realmente buscou a tag esperada e o parentêses usamos para especificar um objeto, que nesse caso foi pelo nome**
+
+Caso queiramos que acesse mais de um objeto basta adicionarmos **All** ao querySelector, dessa forma:
+
+```javascript
+var inputElement = document.querySelectorAll('input');
+
+//exibindo.no.console
+console.log(inputElement);
+```
+
+Anteriormente foi usado uma ação chamada `onclick` para fazer com que executasse uma função de *javascript* , porém era usada no próprio botão `HTML`, mas agora vamos a um exemplo que podemos usar esse comando em javascript.
+
+```javascript
+var btnElement = document.querySelector('button.botao');
+
+btnElement.onclick = function() {
+  alert ('Botão clicado!');
+}
+```
+
+Podemos incrementar ainda mais essa nossa função fazendo com que exiba em tela o que for escrito dentro do nosso `input`.
+
+```javascript
+var inputElement = document.querySelector('input[name=nome]');
+var btnElement = document.querySelector('button.botao');
+
+btnElement.onclick = function() {
+  var text = inputElement.value;
+
+  alert (text);
+}
+```
+
+Com essa funão estamos dizendo a aplicação que quando clicarmos no botão ele exibirá em tela o texto escrito no nosso input.
