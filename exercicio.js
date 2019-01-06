@@ -113,3 +113,5 @@ function exibeHabilidades(usuarios) {
     );
   }
 }
+
+console.log(exibeHabilidades(usuarios));
