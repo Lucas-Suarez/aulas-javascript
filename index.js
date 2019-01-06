@@ -1,4 +1,4 @@
-//javascript
+//javascript (MÓDULO 01)
 
 // VARAIÁVEIS, OBJETO E ARRAY
 
@@ -178,18 +178,37 @@
         j /= 5
       }
 
-//Intervalo e timeout
+      //Intervalo e timeout
 
-//intervalo
-function exbialgo() {
-  console.log('Exibição do intervalo!');
-}
+      //intervalo
+      function exbialgo() {
+        return 'Exibição do intervalo!';
+      }
 
-setInterval(exbialgo, 1000);
+      setInterval(exbialgo, 1000);
 
-//timeout
-function exibialgo() {
-  console.log('Exibindo o timeout!');
-}
+      //timeout
+      function exibialgo() {
+        return 'Exibindo timeout!';
+      }
 
-setTimeout(exibialgo, 5000);
+      setTimeout(exibialgo, 5000);
+
+//DOM (MÓDULO 02)
+
+//EVETOS INLINE
+
+        //função.de.alerta
+        function exibeAlerta () {
+        alert ('Botão foi clicado');
+        }
+
+//TRABALHANDO COM A DOM
+      var inputElement = document.querySelector('input[name=nome]');  
+      var btnElement = document.querySelector('button.botao');
+        
+      btnElement.onclick = function () {
+        var text = inputElement.value;
+
+        alert (text);
+      }
