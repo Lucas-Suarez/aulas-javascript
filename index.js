@@ -1,6 +1,6 @@
 //javascript (MÓDULO 01)
 
-// VARAIÁVEIS, OBJETO E ARRAY
+// VARAIÁVEIS, OBJETO E ARRAY (AULA 01)
 
       //String, int, float, boolean
       var nome = "Lucas";
@@ -34,7 +34,7 @@
       // exibindo no console (objeto específico)
       console.log(aluno.humano);
 
-// OPERAÇÕES MATAMÁTICAS
+// OPERAÇÕES MATAMÁTICAS (AULA 02)
 
       //SOMA
       var x = 10, y = 5, resultado;
@@ -81,7 +81,7 @@
       //EXIBIÇÃO
       console.log(resultado + " -> valor do módulo numérico");
 
-// FUNÇÃO
+// FUNÇÃO (AULA 03)
 
       //Função
       function soma(numero1, numero2) {
@@ -93,7 +93,7 @@
       var resultado = soma(1, 2);
       console.log(resultado);
 
-// CONDICIONAIS
+// CONDICIONAIS (AULA 04)
 
       //Função if, if else, else
       function retornasexo(sexo) {
@@ -122,7 +122,7 @@
       var resultado = exibirsexo ('F');
       console.log(resultado + ' -> Função Switch case')
 
-      //OPERADORES LÓGICOS
+//OPERADORES LÓGICOS (AULA 05)
 
       //Operador &&
       var sexo = 'M', idade = 19;
@@ -153,7 +153,7 @@
 
       console.log(masculino);
 
-//CONDIÇÃO TERNÁRIA
+//CONDIÇÃO TERNÁRIA (AULA 06)
 
       //condição ternária
       var sexo = 'M';
@@ -162,7 +162,7 @@
 
       console.log(retorno + ' <- Condição ternária');
 
-// ESTRUTURAS DE REPETIÇÃO
+// ESTRUTURAS DE REPETIÇÃO (AULA O7)
 
       //loop for
       for (var i = 0; i <= 10; i++) {
@@ -178,7 +178,7 @@
         j /= 5
       }
 
-      //Intervalo e timeout
+//INTERVALO E TIMEOUT (AULA 08)
 
       //intervalo
       function exbialgo() {
@@ -196,14 +196,14 @@
 
 //DOM (MÓDULO 02)
 
-//EVETOS INLINE
+//EVETOS INLINE (AULA 01)
 
         //função.de.alerta
         function exibeAlerta () {
         alert ('Botão foi clicado');
         }
 
-//TRABALHANDO COM A DOM
+//TRABALHANDO COM A DOM (AULA 02)
       var inputElement = document.querySelector('input[name=nome]');  
       var btnElement = document.querySelector('button.botao');
         
@@ -212,3 +212,17 @@
 
         alert (text);
       }
+
+//LINDANDO COM ELEMENTOS (AULA 03)
+
+var linkElement = document.createElement('a');
+linkElement.setAttribute('href', 'http://rocketseat.com.br');
+
+var textElement = document.createTextNode('Acessar o site da RocketSeat');
+linkElement.appendChild(textElement);
+
+var containerElement = document.querySelector ('#app');
+containerElement.appendChild(linkElement);
+
+var inputElement = document.querySelector('#app');
+containerElement.removeChild(inputElement);

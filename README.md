@@ -585,9 +585,9 @@ html lang="pt-br">
 Com essa ação do `onclick` é dito para a palicação que quando tiver um cick no botão a função será executada, e assim  a caixa de diálogo será exibida.
 
 
-## Trabalhando com a DOM
+## Referenciando elementos da DOM
 
-O que vai ser testa do agora é como referenciar elementos da **DOM**, ou seja, do arquvo `html` com os códigos `javascript` para isso vamos criar uma estrutura no nosso código html.
+O que vai ser testado agora é como referenciar elementos da **DOM**, ou seja, do arquvo `html` com os códigos `javascript` para isso vamos criar uma estrutura no nosso código html.
 
 ```html
 html lang="pt-br">
@@ -626,7 +626,7 @@ var inputElement = document.querySelector('input[name=nome]');
 //exibindo.no.console
 console.log(inputElement);
 ```
-**Obs.: O `console.log` serve apenas para visualizarmos se realmente buscou a tag esperada e o parentêses usamos para especificar um objeto, que nesse caso foi pelo nome**
+**Obs.: O `console.log` serve apenas para visualizarmos se realmente buscou a tag esperada e o parentêses usamos para especificar um objeto, que nesse caso foi pelo nome.**
 
 Caso queiramos que acesse mais de um objeto basta adicionarmos **All** ao querySelector, dessa forma:
 
@@ -660,4 +660,59 @@ btnElement.onclick = function() {
 }
 ```
 
-Com essa funão estamos dizendo a aplicação que quando clicarmos no botão ele exibirá em tela o texto escrito no nosso input.
+Com essa função estamos dizendo a aplicação que quando clicarmos no botão ele exibirá em tela o texto escrito no nosso input.
+
+## Criando elementos da DOM
+
+É evidente que podemos criar os elementos `HTML` direto na nossa árvore de elementos, também conhecida como **DOM**, porém é possível tbm cirar elementos para DOM a partir do `javascript`, no exemplo abaixo podemos ver como.
+
+```javascript
+var linkElement = document.createElement('a');
+linkElement.setAttribute('href', 'http://rocketseat.com.br');
+
+var textElement = document.createTextNode('Acessar o site da RocketSeat');
+linkElement.appendChild(textElement);
+
+var containerElement = document.querySelector('#app');
+containerElement.appendChild(linkElement);
+```
+
+Bom com essas váriáveis e especifícações pode criar um elemento `HTML` sendo ele um link, um, botão ou qualquer outro elemento, mas vamos agora entender tudo isso. Primeiro passo foi criar nosso objeto referenciando a tag dele, que nesse caso foi um *link*, após a criação setamos qual link deve ser acessado através daquele objeto e colocamos a propriedade da qualqueremos usando o `setAttribute` (podemos também passar direto a proprieda ao invés do `setAttribute`, como exemplo, `.href`), em seguida criamos a váriavel do texto que o link deve exibir em tela e setamos o texto.
+
+Agora para lincarmos esse texto com o link em si, devos dizer a aplicação que o `textElement` pertence ao `linkElement` usando o `.appendChild`, assim como é feito na linha cinco do exemplo e por fim lançamos tudo isso na nossa página para a exibição criando uma váriável para procurar e selecionar o local onde queremos por o obejto e depois aplicar novamente o `.appendChild` só que dessa ver dizendo que o `linkElement` pertence a várivel da qual armazena o local onde sera posto o objeto, que nesse caso é na *div app*, como mostra na linha sete e oito do exemplo.
+
+Podemos fazer várias coisas com o `Child` e uma delas é remover tags filho da **DOM**, por exemplo, temos um objeto input, mas não queremos mais ele ali e para não precisar modificar nosso código `HTML`, usamos a seguinto ação.
+
+**Objeto HTML**
+```html
+html lang="pt-br">
+  <head>
+    <title>Curso JavaScript</title>
+    <meta charset="utf-8">
+  </head>
+
+  <body>
+    
+    <div id="app">
+      <input id="textbox" />
+    </div>
+
+    <script type="text/javascript" src="index.js"></script> 
+  </body>
+</html>
+```
+
+**Remoção do objeto pelo javascript**
+```javascript
+var linkElement = document.createElement('a');
+linkElement.setAttribute('href', 'http://rocketseat.com.br');
+
+var textElement = document.createTextNode('Acessar o site da RocketSeat');
+linkElement.appendChild(textElement);
+
+var containerElement = document.querySelector('#app');
+containerElement.appendChild(linkElement);
+
+var inputElement = document.querySelector('#app');
+containerElement.removeChild(inputElement);
+```
