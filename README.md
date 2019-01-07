@@ -716,3 +716,35 @@ containerElement.appendChild(linkElement);
 var inputElement = document.querySelector('#app');
 containerElement.removeChild(inputElement);
 ```
+
+## Estilizando a DOM
+
+Através do `javascript` podemos, além de manipular e referenciar os elementos na **DOM**, estilizar os elementos que seriam estilizados com `css`, pois veja.
+
+**Criando a div estilazando com javascript**
+```html
+html lang="pt-br">
+  <head>
+    <title>Curso JavaScript</title>
+    <meta charset="utf-8">
+  </head>
+
+  <body>
+    
+    <div class="box"></div>
+    
+    <!--Estilizando.a.div.box-->
+    <script>
+      var boxElement = document.querySelector('.box');
+      
+      boxElement.style.width = 100;
+      boxElement.style.height = 100;
+      boxElement.style.backgroundColor = '#f31';
+    </script>
+
+    <!--Referenciando.arquivo.javascript-->
+    <script type="text/javascript" src="index.js"></script> 
+  </body>
+</html>
+```
+Como pode-se observar a estilização através do `javascript` só funciona se estiver dento do código `HTML`.

@@ -215,14 +215,15 @@
 
 //LINDANDO COM ELEMENTOS (AULA 03)
 
-var linkElement = document.createElement('a');
-linkElement.setAttribute('href', 'http://rocketseat.com.br');
+      var linkElement = document.createElement('a');
+      linkElement.setAttribute('href', 'http://rocketseat.com.br');
 
-var textElement = document.createTextNode('Acessar o site da RocketSeat');
-linkElement.appendChild(textElement);
+      var textElement = document.createTextNode('Acessar o site da RocketSeat');
+      linkElement.appendChild(textElement);
 
-var containerElement = document.querySelector ('#app');
-containerElement.appendChild(linkElement);
+      var containerElement = document.querySelector ('#app');
+      containerElement.appendChild(linkElement);
 
-var inputElement = document.querySelector('#app');
-containerElement.removeChild(inputElement);
+      var inputElement = document.querySelector('#app');
+      containerElement.removeChild(inputElement);
+   
