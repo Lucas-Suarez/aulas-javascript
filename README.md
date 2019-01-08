@@ -130,7 +130,7 @@ btnElement.onclick = addtodo;
 
 1. `inputElement.value` -> Serve para armazenar na variável o valor do nosso **input** que foi             referenciado no início do código;
 
-2. ``.push` -> Serve para adicionar dentro do array um novo item;
+2. `.push` -> Serve para adicionar dentro do array um novo item;
 
 3. `inputElement.value = '';` -> Serve para limpar o input após o acréscimo do item;
 
