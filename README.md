@@ -156,3 +156,59 @@ function rendertodos () {
 
 rendertodos(); // apenas para executar de e imediato a função
 ```
+
+## Excluindo TODOS
+
+Para excluirmos os TODOS da nossa lista vamos que criar um link ao lado do item para quando for clicado ele excluir o item, para que isso aconteça será necessário adicionarmos esse link através do *javascript*, mais precisamento no bloco do `rendertodos`, como é exemplicificado.
+
+```javascript
+//função.para.renderizar.a.lista
+function rendertodos () {
+    listElement.innerHTML = '';
+
+    for (todo of todos) {
+        
+        var todoElement = document.createElement('li');
+        var todoText = document.createTextNode(todo);
+
+        var linkElement = document.createElement('a');
+        linkElement.setAttribute('href', '#');
+
+        var linkText = document.createTextNode('Excluir');
+
+        linkElement.appendChild(linkText);
+
+        todoElement.appendChild(todoText);
+        listElement.appendChild(todoElement);
+        todoElement.appendChild(linkElement);
+    }
+}
+```
+
+Aqui dentro da `rendertodos` setamos os "botões" para excluir os itens e adicionamos a tela. Criamos uma variável `linkElement` no qual sua função é, criar e atribuir tudo relacionado aos botões de exclusão, dentro dessa variável atribuimos o `href` com um sinal de `#` para dizer que não tem caminho nenhum, logo após precisamos  criar a nossa função para excluir os **TODOS**.
+
+```javascript
+//função.para.deletar.item.da.lista
+function deleteTodo (pos) {
+    todos.splice(pos, 1);
+    rendertodos();
+}
+```
+
+já com a função criada temos atribuir o parâmetro `pos`, pois ele que vai fazer a função funcionar corretamente.
+
+**para fins de dúvida**
+`O método `**splice**` tem como serventia de apagar dados de um array como está sendo mostrado no exemplo. Seguinto a lógica, o splice está apagando os itens um por um do array `**todos**` e passando atributo `**pos**` diz que ele deve apagar o atributo da tal posição, por exemplo. Se o pos fossse valer 0, então ele apagaria o atributo da posição 0 e iria para o próximo.`
+
+Agora devemos instanciar o atributo `pos`, para fazer isso basta voltar no bloco de renderização e adicionar o seguinte comando:
+
+```javascript
+var pos = todos.indexOf(todo);
+linkElement.setAttribute('onclick', 'deleteTodo('+ pos +')');
+```
+
+**Onde:**
+
+1. `var pos = todos.indexOf(todo)` -> Server para pegar a posião exata do intem dentro do array, ou seja, sabemos que o todo armazena os intens do array, sendo assim quando setamos o `inddexOf` para o **todo** estamos dizendo para ele percorrer item a item dentro do array.
+
+2. `linkElement.setAttribute('onclick', 'deleteTodo('+ pos +')');` -> Squi estamos criando para o `linkElement` um atributo `onclick`, usando a função `deleteTodo` e concatenando o pos, simplificando, temos um linha de código dizendo o seguinte: "Pegue o botão excluir e quando ele for clicado execute a função de deletar o item com a posição que ele se encontra".
