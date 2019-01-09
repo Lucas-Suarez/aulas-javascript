@@ -197,7 +197,8 @@ function deleteTodo (pos) {
 
 já com a função criada temos atribuir o parâmetro `pos`, pois ele que vai fazer a função funcionar corretamente.
 
-**para fins de dúvida**
+**para fins de dúvida:**
+
 `O método `**splice**` tem como serventia de apagar dados de um array como está sendo mostrado no exemplo. Seguinto a lógica, o splice está apagando os itens um por um do array `**todos**` e passando atributo `**pos**` diz que ele deve apagar o atributo da tal posição, por exemplo. Se o pos fossse valer 0, então ele apagaria o atributo da posição 0 e iria para o próximo.`
 
 Agora devemos instanciar o atributo `pos`, para fazer isso basta voltar no bloco de renderização e adicionar o seguinte comando:
