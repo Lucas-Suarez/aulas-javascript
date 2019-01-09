@@ -265,3 +265,5 @@ Agora já temos a nossa função de armazenamento funcionando, porém quando atu
 //adiocionando.a.lista.de.itens
 var todos = JSON.parse(localStorage.getItem('list_todos')) || [];
 ```
+
+O método `.parse` tem como função refazer o array, antes usamos o `stringify` para transformarmos o array em String para que pudesse ser aramazenado, agora basta acrecentar o `.parse` para retornar em array e o `getItem` para pegar o TODO do array. O condicional ou (||) está dizendo para a aplicação que caso não haja um armazenamento ele retornará um array vazio.
