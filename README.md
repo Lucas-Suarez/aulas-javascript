@@ -1,4 +1,4 @@
-#Aplicação TODO
+# Aplicação TODO
 
 Essa documentação é voltada a primeira aplicação criada com todos os ensinamentos adquiridos no curso até agora. Será feito uma lista de itens no qual, será possível adicionar e excluir os itens forma.
 
