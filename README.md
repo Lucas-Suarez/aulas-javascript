@@ -210,7 +210,7 @@ linkElement.setAttribute('onclick', 'deleteTodo('+ pos +')');
 
 **Onde:**
 
-1. `var pos = todos.indexOf(todo)` -> Server para pegar a posião exata do intem dentro do array, ou seja, sabemos que o todo armazena os intens do array, sendo assim quando setamos o `inddexOf` para o **todo** estamos dizendo para ele percorrer item a item dentro do array.
+1. `var pos = todos.indexOf(todo)` -> Server para pegar a posião exata do intem dentro do array, ou seja, sabemos que o TODO armazena os intens do array, sendo assim quando setamos o `inddexOf` para o **todo** estamos dizendo para ele percorrer item a item dentro do array.
 
 2. `linkElement.setAttribute('onclick', 'deleteTodo('+ pos +')');` -> Squi estamos criando para o `linkElement` um atributo `onclick`, usando a função `deleteTodo` e concatenando o pos, simplificando, temos um linha de código dizendo o seguinte: "Pegue o botão excluir e quando ele for clicado execute a função de deletar o item com a posição que ele se encontra".
 
