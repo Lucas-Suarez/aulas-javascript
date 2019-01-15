@@ -41,7 +41,7 @@ para que possamos declarar uma **variável** é preciso escrevermos o sguinte c�
 
 ```javascript
 //código javaScript
-var nome = "Lucas";
+const nome = "Lucas";
 ```
 ### Tipos de variáveis
 
@@ -53,26 +53,26 @@ Na liguagem *javascript* temos muitos tipos de váriaveis, abaixo pode-se observ
 
 Tipos de variáveis que armazenam apenas textos;
 ```javascript
-var nome = "Lucas";
+const nome = "Lucas";
 ```
 #### Números inteiros (int)
 
 Tipos de variáveis que armazenam apenas números inteiros;
 ```javascript
-var idade = 19;
+const idade = 19;
 ```
 #### Números decimais (float)
 
 Tipos de variáveis que armazenam números inteiros e decimais;
 ```javascript
-var peso = 60.5;
+const peso = 60.5;
 ```
 
 #### Verdadeiro ou falso (boolean)
 
 Tipos de variáveis que armazenam resultados verdadeiros ou falsos;
 ```javascript
-var humano = true;
+const humano = true;
 ```
 
 #### Vetores
@@ -80,7 +80,7 @@ var humano = true;
 Os vetores são nada mais que *arrays*, que na linguagem *javascript* são ecritas em forma de variáveis.
 
 ```javascript
-var alunos = ['Lucas', 'Carol', 'Ana', 'Samuel'];
+const alunos = ['Lucas', 'Carol', 'Ana', 'Samuel'];
 ```
 
 #### Objetos
@@ -88,7 +88,7 @@ var alunos = ['Lucas', 'Carol', 'Ana', 'Samuel'];
 Os objetos são itens que possuem *atribtos* e *ações* que no **javascript** são dlecrados como variáveis.
 
 ```javascript
-var aluno = {
+const aluno = {
 nome: 'Lucas',
 idade: 19,
 peso: 60.5,
@@ -144,13 +144,13 @@ As opreções matemáticas são usadas para fazer cálculos entre valores que s�
 para que possamos executar essas operações precisamos criar algumas variáveis, nesse caso serão usadas apenas duas.
 
 ```javascript
-var x = 10, y = 5;
-var resultado = (exemplo de cálculo);
+const x = 10, y = 5;
+const resultado = (exemplo de cálculo);
 ```
 ```javascript
-var x = 10;
-var y = 5;
-var resultado = (exemplo de cálculo);
+const x = 10;
+const y = 5;
+const resultado = (exemplo de cálculo);
 ```
 
 **Obs.: As duas formas de declararmos um variável está correta porém, a  primeira é a mais recomendada pois, economiza linhas de código, logo trazendo uma experiência mais rápida para o usuário.**
@@ -163,8 +163,8 @@ Para executarmos os calculos de adição é bem simples, basta usar o `+`, como 
 
 ```javascript
 //cálculo e exibição
-var x = 10, y = 5;
-var resultado = x + y;
+const x = 10, y = 5;
+const resultado = x + y;
 
 console.log(resultado);
 
@@ -175,8 +175,8 @@ Caso trocarmos os valores da váriavel `x`, que nesse caso é inteiro por um as 
 
 ```javascript
 //cálculo e exibição
-var x = 10, y = "5";
-var resultado = x + y;
+const x = 10, y = "5";
+const resultado = x + y;
 
 console.log(resultado);
 
@@ -191,8 +191,8 @@ Observe que o variável `y` é uma *String* pois, está entre áspas.
 Para executarmos os calculos de subtração é bem simples, basta usar o `-`, como é exemplificado.
 
 ```javascript
-var x = 10, y = 5;
-var resultado = x - y;
+const x = 10, y = 5;
+const resultado = x - y;
 
 console.log(resultado);
 
@@ -204,8 +204,8 @@ resultado -> 5
 Para executarmos os calculos de multiplicação é bem simples, basta usar o `*`, como é exemplificado.
 
 ```javascript
-var x = 10, y = 5;
-var resultado = x * y;
+const x = 10, y = 5;
+const resultado = x * y;
 
 console.log(resultado);
 
@@ -218,8 +218,8 @@ resultado -> 50
 Para executarmos os calculos de divisão é bem simples, basta usar a `/`, como é exemplificado.
 
 ```javascript
-var x = 10, y = 5;
-var resultado = x / y;
+const x = 10, y = 5;
+const resultado = x / y;
 
 console.log(resultado);
 
@@ -233,8 +233,8 @@ O módulo é usado para descobrir o resto de uma divisão, para que possamos faz
 
 ```javascript
 //cálculo e exibição
-var x = 11, y = 5;
-var resultado = x % y;
+const x = 11, y = 5;
+const resultado = x % y;
 
 console.log(resultado);
 
@@ -245,8 +245,8 @@ Caso queiramos incrementar os valores nas nossas variáveis podemos fazer da seg
 
 ```javascript
 //cálculo e exibição
-var x = 10, y =5;
-var resultado = x + y;
+const x = 10, y =5;
+const resultado = x + y;
 
 console.log(resultado);
 
@@ -262,8 +262,8 @@ x -> 13
 **OU**
 ```javascript
 //cálculo e exibição
-var x = 10, y =5;
-var resultado = x + y;
+const x = 10, y =5;
+const resultado = x + y;
 
 console.log(resultado);
 
@@ -286,14 +286,14 @@ Para criar uma função é relativamente simples, nesse exemplo usaremos uma fun
 ```javascript
 //Função
 function soma(numero1, numero2) {
-  var resultado = numero1 + numero2
+  let resultado = numero1 + numero2
 
 //Retorno
   return resultado
 }
 
 //Execução
-var resultado = soma(1, 2)
+const resultado = soma(1, 2)
 
 //Exibição
 console.log(resultado);
@@ -319,7 +319,7 @@ function retornarsexo(sexo) {
 }
 
 //Resultado da função
-var resultado = retornarsexo ("M")
+const resultado = retornarsexo ("M")
 
 //Exibição
 console.log(resultado);
@@ -368,7 +368,7 @@ Esse operador (e/and), faz a comparação de dois elementos no bloco de código,
 
 ```javascript
 //função
-var sexo = 'M', idade = 19;
+const sexo = 'M', idade = 19;
 
 if (sexo === 'M' && idade >= 18) {
   console.log('Sexo Masculino e maior de idade');
@@ -385,7 +385,7 @@ Com esse operador (ou/or) podemos comparar dois itens e ver se um dos dois é ve
 
 ```javascript
 //função
-var sexo = 'M', idade = 19;
+const sexo = 'M', idade = 19;
 
 if (sexo === 'M' || idade >= 18) {
   console.log("Ok");
@@ -401,7 +401,7 @@ Esse operador (não/desigualdade ou not) é utilizado para verificar a desiguald
 
 ```javascript
 //função
-var sexo = 'M';
+const sexo = 'M';
 
 if (sexo !== 'F') {
   console.log(Ok);
@@ -418,8 +418,8 @@ Com esse método os valores que são retornado em console a partir das função 
 
 ```javascript
 //função
-var sexo = 'F';
-var resultado;
+const sexo = 'F';
+const resultado;
 
 if (sexo !== 'M') {
   resultado = true;
@@ -437,9 +437,9 @@ Com esse método a função que será executada terá o mesmo efeito, porém em 
 
 ```javascript
 //função
-var sexo = 'F';
+const sexo = 'F';
 
-var resultado = sexo === 'M';
+const resultado = sexo === 'M';
 
 console.log(masculino);
 ```
@@ -465,9 +465,9 @@ Masculino
 **Com o condicional ternário**
 
 ```javascript
-var sexo = 'M';
+const sexo = 'M';
 
-var retorno = (sexo === 'M') ? 'Masculino' : 'Feminino';
+const retorno = (sexo === 'M') ? 'Masculino' : 'Feminino';
 
 console.log(retorno);
 
@@ -496,7 +496,7 @@ for (var i = 0; i >= 10; i++) {
 Esse tipo de `loop` é usado quando não sabemos a dimensão do intervalo, ou seja, quando precisamos usar algo a mais para descobrir, como mostra o exemplo.
 
 ```javascript
-var j = 12141312 //numero aleatório
+const j = 12141312 //numero aleatório
 
 while (j < 50) {
   console.log(j);
@@ -610,18 +610,18 @@ html lang="pt-br">
 Com esse esses elementos criados já podemos prosseguir com para a criação do código `javascript`, para que possamos ter o funcionamento desses elementos énecessário o seguinte código.
 
 ```javascript
-var inputElement = document.getgetElementById('textbox');
-var inputElement = document.getgetElementByTagName('input');
-var inputElement = document.getElementByClassName('nome')
+const inputElement = document.getgetElementById('textbox');
+const inputElement = document.getgetElementByTagName('input');
+const inputElement = document.getElementByClassName('nome')
 ```
 Com uma dessas variáveis setada podemos acessar o nosso `input` sendo que, `getgetElementById` serve para acessar o input ou qualquer outro elemento da **DOM** pelo ID e com isso ele só acessa um pois, o ID é único no `HTML`, o `getgetElementByTagName` ele acessa pela tag usada, que nesse caso é o input, logo acessa todos os inputs presentes na DOM por isso caso pormos um `console.log(inputElement)` teremos o retorno de um array, pois caso exista mais de um input será retornado todos existentes e por fim podemos acessar o mesmo objeto através da classe usando o `getElementByClassName` que da mesma forma que o `getgetElementById` terá o retorno em array.
 
 Temos também uma forma mais simples de encontrar referenciar e encontrar nossos objetos usando o `querySelector`, com isso podemos andar pela nossa DOM, digamos assim, basta dizer onde está ou especificar o objeto, como é paresentado no exemplo.
 
 ```javascript
-var inputElement = document.querySelector('div#app input');
+const inputElement = document.querySelector('div#app input');
 // OU //
-var inputElement = document.querySelector('input[name=nome]');
+const inputElement = document.querySelector('input[name=nome]');
 
 //exibindo.no.console
 console.log(inputElement);
@@ -631,7 +631,7 @@ console.log(inputElement);
 Caso queiramos que acesse mais de um objeto basta adicionarmos **All** ao querySelector, dessa forma:
 
 ```javascript
-var inputElement = document.querySelectorAll('input');
+const inputElement = document.querySelectorAll('input');
 
 //exibindo.no.console
 console.log(inputElement);
@@ -640,7 +640,7 @@ console.log(inputElement);
 Anteriormente foi usado uma ação chamada `onclick` para fazer com que executasse uma função de *javascript* , porém era usada no próprio botão `HTML`, mas agora vamos a um exemplo que podemos usar esse comando em javascript.
 
 ```javascript
-var btnElement = document.querySelector('button.botao');
+const btnElement = document.querySelector('button.botao');
 
 btnElement.onclick = function() {
   alert ('Botão clicado!');
@@ -650,11 +650,11 @@ btnElement.onclick = function() {
 Podemos incrementar ainda mais essa nossa função fazendo com que exiba em tela o que for escrito dentro do nosso `input`.
 
 ```javascript
-var inputElement = document.querySelector('input[name=nome]');
-var btnElement = document.querySelector('button.botao');
+const inputElement = document.querySelector('input[name=nome]');
+const btnElement = document.querySelector('button.botao');
 
 btnElement.onclick = function() {
-  var text = inputElement.value;
+  const text = inputElement.value;
 
   alert (text);
 }
@@ -667,13 +667,13 @@ Com essa função estamos dizendo a aplicação que quando clicarmos no botão e
 É evidente que podemos criar os elementos `HTML` direto na nossa árvore de elementos, também conhecida como **DOM**, porém é possível tbm cirar elementos para DOM a partir do `javascript`, no exemplo abaixo podemos ver como.
 
 ```javascript
-var linkElement = document.createElement('a');
+const linkElement = document.createElement('a');
 linkElement.setAttribute('href', 'http://rocketseat.com.br');
 
-var textElement = document.createTextNode('Acessar o site da RocketSeat');
+const textElement = document.createTextNode('Acessar o site da RocketSeat');
 linkElement.appendChild(textElement);
 
-var containerElement = document.querySelector('#app');
+const containerElement = document.querySelector('#app');
 containerElement.appendChild(linkElement);
 ```
 
@@ -704,16 +704,16 @@ html lang="pt-br">
 
 **Remoção do objeto pelo javascript**
 ```javascript
-var linkElement = document.createElement('a');
+const linkElement = document.createElement('a');
 linkElement.setAttribute('href', 'http://rocketseat.com.br');
 
-var textElement = document.createTextNode('Acessar o site da RocketSeat');
+const textElement = document.createTextNode('Acessar o site da RocketSeat');
 linkElement.appendChild(textElement);
 
-var containerElement = document.querySelector('#app');
+const containerElement = document.querySelector('#app');
 containerElement.appendChild(linkElement);
 
-var inputElement = document.querySelector('#app');
+const inputElement = document.querySelector('#app');
 containerElement.removeChild(inputElement);
 ```
 
@@ -748,3 +748,19 @@ html lang="pt-br">
 </html>
 ```
 Como pode-se observar a estilização através do `javascript` só funciona se estiver dento do código `HTML`.
+
+## JS Assincrôno
+
+É uma forma de acessar o servidor com *javascript*, coletar e exibir informações baseados nele, sem que precise atualizar a página da web.
+
+### AJAX
+
+Significa **Asynchronous JavaScript e XML**. Em poucas palavras, é o uso do objeto *XMLHttpRequest* para se comunicar com os scripts do lado do servidor. Ele pode enviar bem como receber informações em uma variedade de formatos, incluindo JSON, XML, HTML, e até mesmo arquivos de texto.
+
+Para que possamos iniciar uma requisição **AJAX** é necessário que escrevamos o seguinte código.
+
+```javascript
+const xhr = new XMLHttpRequest();
+```
+
+Com essa classe do *javascript* instanciada, nos da possíbilidade de recuperar os dados do servidor sem que precisamos atualizar a página. Após feito isso precisamos acessar algum servidor e no nosso caso vamos utilizar a **API** do do **GitHub** como exemplo, pois então basta entrar no seguinte link, [Api do GitHub](https://api.github.com/users/), após o `/users` coloque seu nome de usuário do GitHub.
