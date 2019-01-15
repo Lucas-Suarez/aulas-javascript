@@ -3,16 +3,16 @@
 // VARAIÁVEIS, OBJETO E ARRAY (AULA 01)
 
       //String, int, float, boolean
-      var nome = "Lucas";
-      var idade = 19;
-      var peso  = 60.5;
-      var humano = true;
+      const nome = "Lucas";
+      const idade = 19;
+      const peso  = 60.5;
+      const humano = true;
 
       //vetorial
-      var alunos = ['Lucas', 'Carol', 'Ana', 'Samuel'];
+      const alunos = ['Lucas', 'Carol', 'Ana', 'Samuel'];
       
       //objeto
-      var aluno = {
+      const aluno = {
         nome: 'Lucas',
         idade: 19,
         peso: 60.5,
@@ -42,15 +42,15 @@
       resultado = x + y;
 
       //CONCATENAÇÃO
-      var a = 10, b = "5";
-      var result = a + b;
+      const a = 10, b = "5";
+      const result = a + b;
 
       //EXIBIÇÃO
       console.log(result + " -> valor da concatenação");
       console.log(resultado + " -> valor da soma numérica");
       
       //SUBTRAÇÃO
-      var x = 10, y = 5, resultado;
+      const x = 10, y = 5, resultado;
 
       resultado = x - y;
       
@@ -58,7 +58,7 @@
       console.log(resultado + " -> valor da subtração numérica");
 
       //MULTIPLICAÇÃO
-      var x = 10, y = 5, resultado;
+      const x = 10, y = 5, resultado;
 
       resultado = x * y;
       
@@ -66,7 +66,7 @@
       console.log(resultado + " -> valor da multiplicação numérica");
 
       //DIVISÃO
-      var x = 10, y = 5, resultado;
+      const x = 10, y = 5, resultado;
 
       resultado = x / y;
 
@@ -74,7 +74,7 @@
       console.log(resultado + " -> valor da divisão numérica");
 
       //MÓDULO
-      var x = 11, y = 5, resultado;
+      const x = 11, y = 5, resultado;
 
       resultado = x % y;
 
@@ -85,12 +85,12 @@
 
       //Função
       function soma(numero1, numero2) {
-        var resultado = numero1 + numero2;
+        let resultado = numero1 + numero2;
 
         return resultado
       }
 
-      var resultado = soma(1, 2);
+      const resultado = soma(1, 2);
       console.log(resultado);
 
 // CONDICIONAIS (AULA 04)
@@ -105,7 +105,7 @@
           return 'Feminino';
         }
       }
-      var resultado = retornasexo ('M')
+      const resultado = retornasexo ('M')
       console.log(resultado + ' -> Função if');
 
       //Função switch case
@@ -119,20 +119,20 @@
             return 'Outro';
         }
       }
-      var resultado = exibirsexo ('F');
+      const resultado = exibirsexo ('F');
       console.log(resultado + ' -> Função Switch case')
 
 //OPERADORES LÓGICOS (AULA 05)
 
       //Operador &&
-      var sexo = 'M', idade = 19;
+      const sexo = 'M', idade = 19;
 
       if (sexo === 'M' && idade >= 18) {
         console.log('É do sexo masculino e maior de idade');
       }
 
       //Operador ||
-      var sexo = 'M', idade = 19;
+      const sexo = 'M', idade = 19;
 
       if (sexo === 'M' || idade >= 18) {
         console.log("Ok")
@@ -140,25 +140,25 @@
 
       //Operador !== ou !=
 
-      var sexo = 'M', idade = 19;
+      const sexo = 'M', idade = 19;
 
       if (sexo !== 'F') {
         console.log("Ok!")
       }
 
       //Simplificando a função
-      var sexo = 'M';
+      const sexo = 'M';
 
-      var masculino = sexo === 'M';
+      const masculino = sexo === 'M';
 
       console.log(masculino);
 
 //CONDIÇÃO TERNÁRIA (AULA 06)
 
       //condição ternária
-      var sexo = 'M';
+      const sexo = 'M';
 
-      var retorno = (sexo === 'M') ? 'Masculino' : 'Feminino';
+      const retorno = (sexo === 'M') ? 'Masculino' : 'Feminino';
 
       console.log(retorno + ' <- Condição ternária');
 
@@ -170,7 +170,7 @@
       }
 
       //loop while 
-      var j = 102983;
+      const j = 102983;
 
       while (j > 50) {
         console.log(j + ' <- j')
@@ -204,26 +204,34 @@
         }
 
 //TRABALHANDO COM A DOM (AULA 02)
-      var inputElement = document.querySelector('input[name=nome]');  
-      var btnElement = document.querySelector('button.botao');
+
+      //Selecionando elementos HTML
+      const inputElement = document.querySelector('input[name=nome]');  
+      const btnElement = document.querySelector('button.botao');
         
       btnElement.onclick = function () {
-        var text = inputElement.value;
+        let text = inputElement.value;
 
         alert (text);
       }
 
 //LINDANDO COM ELEMENTOS (AULA 03)
 
-      var linkElement = document.createElement('a');
+      const linkElement = document.createElement('a');
       linkElement.setAttribute('href', 'http://rocketseat.com.br');
 
-      var textElement = document.createTextNode('Acessar o site da RocketSeat');
+      const textElement = document.createTextNode('Acessar o site da RocketSeat');
       linkElement.appendChild(textElement);
 
-      var containerElement = document.querySelector ('#app');
+      const containerElement = document.querySelector ('#app');
       containerElement.appendChild(linkElement);
 
-      var inputElement = document.querySelector('#app');
+      const inputElement = document.querySelector('#app');
       containerElement.removeChild(inputElement);
    
+// JS Assincrôno (módulo 04)
+
+// AJAX (AULA 01)
+
+      //iniciando a requisição do AJAX
+    const xhr = new XMLHttpRequest();
