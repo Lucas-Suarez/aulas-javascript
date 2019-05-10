@@ -4,7 +4,7 @@ btnElement = document.querySelector('.btn');
 inputElement = document.querySelector('.textbox');
 
 //adiocionando.a.lista.de.itens
-var todos = JSON.parse(localStorage.getItem('list_todos')) || [];
+const todos = JSON.parse(localStorage.getItem('list_todos')) || [];
 
 //função.para.renderizar.a.lista
 function rendertodos () {
@@ -12,16 +12,16 @@ function rendertodos () {
 
     for (todo of todos) {
         
-        var todoElement = document.createElement('li');
-        var todoText = document.createTextNode(todo);
+        const todoElement = document.createElement('li');
+        const todoText = document.createTextNode(todo);
 
-        var linkElement = document.createElement('a');
+        const linkElement = document.createElement('a');
         linkElement.setAttribute('href', '#');
 
-        var pos = todos.indexOf(todo);
+        const pos = todos.indexOf(todo);
         linkElement.setAttribute('onclick', 'deleteTodo('+ pos +')');
 
-        var linkText = document.createTextNode('Excluir');
+        const linkText = document.createTextNode('Excluir');
 
         linkElement.appendChild(linkText);
 
@@ -35,7 +35,7 @@ rendertodos();
 
 //função.para.adicionar.item.a.lista
 function addtodo () {
-    var todoText = inputElement.value;
+    const todoText = inputElement.value;
 
     todos.push(todoText);
     inputElement.value = '';
