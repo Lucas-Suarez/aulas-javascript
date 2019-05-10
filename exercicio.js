@@ -1,7 +1,7 @@
 //EXIBINDO.ENDEREÇO.DO.USUÁRIO (exercício 01)
 
 //Dados.do.endereço.do.usuário
-var endereco = {
+const endereco = {
     rua: "Rua dos pinheiros",
     numero: 1293,
     bairro: "centro",
@@ -74,7 +74,7 @@ function experiencia (anos) {
 }
 
 //dados.do.usuário
-var anosEstudo = 3;
+const anosEstudo = 3;
 experiencia(anosEstudo);
 
 //exibição.do.nível.de.experiência
@@ -90,7 +90,7 @@ console.log(experiencia(anosEstudo));
 //MOSTRANDO.HABILIDADES.DOS.USUÁRIOS (exercício 05)
 
 //array.com.atributos
-var usuarios = [
+const usuarios = [
   {
     nome: "Diego",
     habilidades: ["Javascript", "ReactJS", "Redux"]
