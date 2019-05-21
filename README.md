@@ -1,5 +1,20 @@
-# Sumário
+### Sumário
 [Javascript](https://github.com/Lucas-Suarez/aulas-javascript#javascript)
+[Exibindo resultados](https://github.com/Lucas-Suarez/aulas-javascript#exibindo-resultados)
+[Variáveis Primitivas e Dados](https://github.com/Lucas-Suarez/aulas-javascript#vari%C3%A1veis-primitivas-e-dados)
+[Exibindo no console](https://github.com/Lucas-Suarez/aulas-javascript#exibindo-no-console)
+[Operações matemáticas](https://github.com/Lucas-Suarez/aulas-javascript#opera%C3%A7%C3%B5es-matem%C3%A1ticas)
+[Funções](https://github.com/Lucas-Suarez/aulas-javascript#fun%C3%A7%C3%B5es)
+[Estruturas condicionais](https://github.com/Lucas-Suarez/aulas-javascript#estruturas-condicionais)
+[Operadores Lógicos]( https://github.com/Lucas-Suarez/aulas-javascript#operadores-l%C3%B3gicos)
+[Condição ternária](https://github.com/Lucas-Suarez/aulas-javascript#condi%C3%A7%C3%A3o-tern%C3%A1ria)
+[Estruturas de repetição](https://github.com/Lucas-Suarez/aulas-javascript#estruturas-de-repeti%C3%A7%C3%A3o)
+[Intervalo e timeout](https://github.com/Lucas-Suarez/aulas-javascript#intervalo-e-timeout)
+[DOM](https://github.com/Lucas-Suarez/aulas-javascript#dom)
+[Referenciando elementos da DOM](https://github.com/Lucas-Suarez/aulas-javascript#referenciando-elementos-da-dom)
+[Criando elementos da DOM](https://github.com/Lucas-Suarez/aulas-javascript#criando-elementos-da-dom)
+[Estilizando a DOM](https://github.com/Lucas-Suarez/aulas-javascript#estilizando-a-dom
+[JS Assincrôno](https://github.com/Lucas-Suarez/aulas-javascript#js-assincr%C3%B4no)
 
 # JavaScript
 
@@ -342,7 +357,7 @@ Tem a mesma função do `if` e diferente do `else` pois, ele não apenas executa
 
 Usamos o `else` para dizer que se caso o `if` for falso, então ele executará outra ação, como é visto no exemplo a cima.
 
-## Switch case
+### Switch case
 
 Quando temos um caso de trabalho em massa em cima de uma única variável é interessante usarmos a condicional `switch case`, pois com ela você pode executar varias funções e ações com mais praticidade, como segue o exemplo.
 
