@@ -1,20 +1,20 @@
 # Sumário
-### Javascript ...................................................................................... [1](https://github.com/Lucas-Suarez/aulas-javascript#javascript)  
-### Exibindo resultados ............................................................................. [2](https://github.com/Lucas-Suarez/aulas-javascript#exibindo-resultados)  
-### Variáveis Primitivas e Dados .................................................................... [3](https://github.com/Lucas-Suarez/aulas-javascript#vari%C3%A1veis-primitivas-e-dados)  
-### Exibindo no console ............................................................................. [4](https://github.com/Lucas-Suarez/aulas-javascript#exibindo-no-console)  
-### Operações matemáticas ........................................................................... [5](https://github.com/Lucas-Suarez/aulas-javascript#opera%C3%A7%C3%B5es-matem%C3%A1ticas)  
-### Funções ......................................................................................... [6](https://github.com/Lucas-Suarez/aulas-javascript#fun%C3%A7%C3%B5es)  
-### Estruturas condicionais ......................................................................... [7](https://github.com/Lucas-Suarez/aulas-javascript#estruturas-condicionais)  
-### Operadores Lógicos .............................................................................. [8]( https://github.com/Lucas-Suarez/aulas-javascript#operadores-l%C3%B3gicos)  
-### Condição ternária ............................................................................... [9](https://github.com/Lucas-Suarez/aulas-javascript#condi%C3%A7%C3%A3o-tern%C3%A1ria)  
-### Estruturas de repetição ......................................................................... [10](https://github.com/Lucas-Suarez/aulas-javascript#estruturas-de-repeti%C3%A7%C3%A3o)  
-### Intervalo e timeout ............................................................................. [11](https://github.com/Lucas-Suarez/aulas-javascript#intervalo-e-timeout)  
-### DOM ............................................................................................. [12](https://github.com/Lucas-Suarez/aulas-javascript#dom)  
-### Referenciando elementos da DOM .................................................................. [13](https://github.com/Lucas-Suarez/aulas-javascript#referenciando-elementos-da-dom)  
-### Criando elementos da DOM ........................................................................ [14](https://github.com/Lucas-Suarez/aulas-javascript#criando-elementos-da-dom)  
-### Estilizando a DOM ............................................................................... [15](https://github.com/Lucas-Suarez/aulas-javascript#estilizando-a-dom)  
-### JS Assincrôno ................................................................................... [16](https://github.com/Lucas-Suarez/aulas-javascript#js-assincr%C3%B4no)  
+### Javascript ....................................................................................................... [1](https://github.com/Lucas-Suarez/aulas-javascript#javascript)  
+### Exibindo resultados .............................................................................................. [2](https://github.com/Lucas-Suarez/aulas-javascript#exibindo-resultados)  
+### Variáveis Primitivas e Dados ..................................................................................... [3](https://github.com/Lucas-Suarez/aulas-javascript#vari%C3%A1veis-primitivas-e-dados)  
+### Exibindo no console .............................................................................................. [4](https://github.com/Lucas-Suarez/aulas-javascript#exibindo-no-console)  
+### Operações matemáticas ............................................................................................ [5](https://github.com/Lucas-Suarez/aulas-javascript#opera%C3%A7%C3%B5es-matem%C3%A1ticas)  
+### Funções .......................................................................................................... [6](https://github.com/Lucas-Suarez/aulas-javascript#fun%C3%A7%C3%B5es)  
+### Estruturas condicionais .......................................................................................... [7](https://github.com/Lucas-Suarez/aulas-javascript#estruturas-condicionais)  
+### Operadores Lógicos ............................................................................................... [8]( https://github.com/Lucas-Suarez/aulas-javascript#operadores-l%C3%B3gicos)  
+### Condição ternária ................................................................................................ [9](https://github.com/Lucas-Suarez/aulas-javascript#condi%C3%A7%C3%A3o-tern%C3%A1ria)  
+### Estruturas de repetição .......................................................................................... [10](https://github.com/Lucas-Suarez/aulas-javascript#estruturas-de-repeti%C3%A7%C3%A3o)  
+### Intervalo e timeout .............................................................................................. [11](https://github.com/Lucas-Suarez/aulas-javascript#intervalo-e-timeout)  
+### DOM .............................................................................................................. [12](https://github.com/Lucas-Suarez/aulas-javascript#dom)  
+### Referenciando elementos da DOM ................................................................................... [13](https://github.com/Lucas-Suarez/aulas-javascript#referenciando-elementos-da-dom)  
+### Criando elementos da DOM ......................................................................................... [14](https://github.com/Lucas-Suarez/aulas-javascript#criando-elementos-da-dom)  
+### Estilizando a DOM ................................................................................................ [15](https://github.com/Lucas-Suarez/aulas-javascript#estilizando-a-dom)  
+### JS Assincrôno .................................................................................................... [16](https://github.com/Lucas-Suarez/aulas-javascript#js-assincr%C3%B4no)  
 
 # JavaScript
 
@@ -782,3 +782,5 @@ const xhr = new XMLHttpRequest();
 ```
 
 Com essa classe do *javascript* instanciada, nos da possíbilidade de recuperar os dados do servidor sem que precisamos atualizar a página. Após feito isso precisamos acessar algum servidor e no nosso caso vamos utilizar a **API** do do **GitHub** como exemplo, pois então basta entrar no seguinte link, [Api do GitHub](https://api.github.com/users/), após o `/users` coloque seu nome de usuário do GitHub.
+
+[Voltar ao topo](https://github.com/Lucas-Suarez/aulas-javascript#sum%C3%A1rio)
