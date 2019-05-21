@@ -1,4 +1,4 @@
-### Sumário
+# Sumário
 [Javascript](https://github.com/Lucas-Suarez/aulas-javascript#javascript)  
 [Exibindo resultados](https://github.com/Lucas-Suarez/aulas-javascript#exibindo-resultados)  
 [Variáveis Primitivas e Dados](https://github.com/Lucas-Suarez/aulas-javascript#vari%C3%A1veis-primitivas-e-dados)  
