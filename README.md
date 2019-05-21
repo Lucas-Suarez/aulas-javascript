@@ -1,5 +1,5 @@
 # Sumário
-### Javascript [prosseguir](https://github.com/Lucas-Suarez/aulas-javascript#javascript)  
+### Javascript........................................... [1](https://github.com/Lucas-Suarez/aulas-javascript#javascript)  
 [Exibindo resultados](https://github.com/Lucas-Suarez/aulas-javascript#exibindo-resultados)  
 [Variáveis Primitivas e Dados](https://github.com/Lucas-Suarez/aulas-javascript#vari%C3%A1veis-primitivas-e-dados)  
 [Exibindo no console](https://github.com/Lucas-Suarez/aulas-javascript#exibindo-no-console)  
