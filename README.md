@@ -1,7 +1,7 @@
-# Sumário
-### Javascript ....................................................................................................... [1](https://github.com/Lucas-Suarez/aulas-javascript#javascript)  
-### Exibindo resultados .............................................................................................. [2](https://github.com/Lucas-Suarez/aulas-javascript#exibindo-resultados)  
-### Variáveis Primitivas e Dados ..................................................................................... [3](https://github.com/Lucas-Suarez/aulas-javascript#vari%C3%A1veis-primitivas-e-dados)  
+# Índice
+[1. Javascript](https://github.com/Lucas-Suarez/aulas-javascript#javascript)  
+[2. Exibindo resultados](https://github.com/Lucas-Suarez/aulas-javascript#exibindo-resultados)  
+[3. Variáveis Primitivas e Dados](https://github.com/Lucas-Suarez/aulas-javascript#vari%C3%A1veis-primitivas-e-dados)  
 ### Exibindo no console .............................................................................................. [4](https://github.com/Lucas-Suarez/aulas-javascript#exibindo-no-console)  
 ### Operações matemáticas ............................................................................................ [5](https://github.com/Lucas-Suarez/aulas-javascript#opera%C3%A7%C3%B5es-matem%C3%A1ticas)  
 ### Funções .......................................................................................................... [6](https://github.com/Lucas-Suarez/aulas-javascript#fun%C3%A7%C3%B5es)  
