@@ -807,4 +807,4 @@ const xhr = new XMLHttpRequest();
 
 Com essa classe do *javascript* instanciada, nos da possíbilidade de recuperar os dados do servidor sem que precisamos atualizar a página. Após feito isso precisamos acessar algum servidor e no nosso caso vamos utilizar a **API** do do **GitHub** como exemplo, pois então basta entrar no seguinte link, [Api do GitHub](https://api.github.com/users/), após o `/users` coloque seu nome de usuário do GitHub.
 
-[Voltar ao topo](https://github.com/Lucas-Suarez/aulas-javascript#sum%C3%A1rio)
+[Voltar ao topo](https://github.com/Lucas-Suarez/aulas-javascript)
