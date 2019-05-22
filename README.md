@@ -25,14 +25,20 @@
 [7.3 - Condição else](https://github.com/Lucas-Suarez/aulas-javascript#condi%C3%A7%C3%A3o-else)  
 [7.4 - Switch case](https://github.com/Lucas-Suarez/aulas-javascript#switch-case)  
 [8 - Operadores Lógicos]( https://github.com/Lucas-Suarez/aulas-javascript#operadores-l%C3%B3gicos)  
+[8.1 - Operador &&](https://github.com/Lucas-Suarez/aulas-javascript#operador-)  
+[8.2 - Operador ||](https://github.com/Lucas-Suarez/aulas-javascript#operador--1)  
+[8.3 - Operador !==](https://github.com/Lucas-Suarez/aulas-javascript#operador--2)  
 [9 - Condição ternária](https://github.com/Lucas-Suarez/aulas-javascript#condi%C3%A7%C3%A3o-tern%C3%A1ria)  
 [10 - Estruturas de repetição](https://github.com/Lucas-Suarez/aulas-javascript#estruturas-de-repeti%C3%A7%C3%A3o)  
+[10.1 - for](https://github.com/Lucas-Suarez/aulas-javascript#for)  
+[8.2 - while](https://github.com/Lucas-Suarez/aulas-javascript#while)    
 [11 - Intervalo e timeout](https://github.com/Lucas-Suarez/aulas-javascript#intervalo-e-timeout)  
 [12 - DOM](https://github.com/Lucas-Suarez/aulas-javascript#dom)  
 [13 - Referenciando elementos da DOM](https://github.com/Lucas-Suarez/aulas-javascript#referenciando-elementos-da-dom)  
 [14 - Criando elementos da DOM](https://github.com/Lucas-Suarez/aulas-javascript#criando-elementos-da-dom)  
 [15 - Estilizando a DOM](https://github.com/Lucas-Suarez/aulas-javascript#estilizando-a-dom)  
 [16 - JS Assincrôno](https://github.com/Lucas-Suarez/aulas-javascript#js-assincr%C3%B4no)  
+[16.1 - AJAX](https://github.com/Lucas-Suarez/aulas-javascript/edit/master/README.md)  
 
 # JavaScript
 
